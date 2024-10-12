@@ -1,0 +1,35 @@
+<c-modal
+  id="liveDemoModal"
+  [visible]="visible"
+  (visibleChange)="handleLiveDemoChange($event)"
+>
+  <c-modal-header>
+    <h5 cModalTitle>Upload new Deployment</h5>
+    <button (click)="toggleLiveDemo()" cButtonClose></button>
+  </c-modal-header>
+  <c-modal-body>
+    <form cForm>
+      <div class="mb-3">
+        <label cLabel for="inputDeploymentKey">Deployment Key</label>
+        <input cFormControl id="inputDeploymentKey" type="text">
+      </div>
+      <div class="mb-3">
+        <label cLabel for="inputDeploymentName">Deployment Name</label>
+        <input cFormControl id="inputDeploymentName" type="text">
+      </div>
+      <div class="mb-3">
+        <label cLabel for="inputTenantId">Tenant ID</label>
+        <input cFormControl id="inputTenantId" type="text">
+      </div>
+      <div class="mb-3">
+        <label cLabel for="inputDeploymentFile">File</label>
+        <input cFormControl id="inputDeploymentFile" type="file">
+      </div>
+      <input cButton color="primary" type="submit">
+    </form>
+  </c-modal-body>
+  <c-modal-footer>
+    <button (click)="toggleLiveDemo()" cButton color="secondary">Discard</button>
+    <button cButton color="primary">Upload</button>
+  </c-modal-footer>
+</c-modal>

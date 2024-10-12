@@ -128,3 +128,31 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+.DS_Store
+
+# Dipendenze npm
+node_modules/
+
+# Output di build
+dist/
+coverage/
+
+# Cartelle temporanee
+tmp/
+temp/
+out-tsc/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File JS compilati da TypeScript
+src/**/*.js
+src/**/*.js.map
+
+# Sistemi operativi specifici
+.DS_Store
+Thumbs.db
